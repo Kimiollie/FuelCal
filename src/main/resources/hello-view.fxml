@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="HelloController"
+      spacing="10" alignment="CENTER"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <Label fx:id="lblDistance" text="Distance"/>
+    <TextField fx:id="txtDistance"/>
+
+    <Label fx:id="lblFuel" text="Fuel"/>
+    <TextField fx:id="txtFuel"/>
+
+    <Label fx:id="lblResult" text="Result"/>
+
+    <Button fx:id="btnCalculate" text="Calculate" onAction="#onCalculateClick"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="EN" onAction="#onENClick"/>
+        <Button text="FR" onAction="#onFRClick"/>
+        <Button text="JP" onAction="#onJPClick"/>
+        <Button text="IR" onAction="#onIRClick"/>
+    </HBox>
+</VBox>
